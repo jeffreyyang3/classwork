@@ -3,6 +3,8 @@ public class LinkedList {
     Node head;
     int size;
     int count = 0;
+    int countsize;
+    int data;
 
     LinkedList(){
         this.head = null;
@@ -10,12 +12,11 @@ public class LinkedList {
         this.count = 0;
     }
 
-
-
     public void push(int i){
         Node temp = head;
 
         if (temp == null) {
+            size++;
             head = new Node(i, null);
             return;
         }
@@ -24,14 +25,16 @@ public class LinkedList {
             temp = temp.next;
         }
         Node n = new Node(i, null);
-
         temp.next = n;
         size++;
 
     }
-    public void pop(){
+    public int pop(){
+        int temp = head.data;
         head = head.next;
         size--;
+        return temp;
+
 
     }
     public void insert(int n, int d, Node a){
@@ -58,35 +61,48 @@ public class LinkedList {
 
     }
     public int find(int i, Node n){
-
-        if (n == head){
-            count = 1;
-        }
-
-        if (i != n.data){
-            count++;
-            find(i , n.next);
-        }
-        if(n == null) {
+        //System.out.println(n.data);
+        if(i>size){
             return -1;
         }
+        System.out.println(size);
+        count = 1;
+        search(i, n);
+
+        if(countsize == -1){
+            return countsize;
+        }
         else{
-            return count - 1;
+            return data;
         }
 
 
 
-
-
     }
-    public void traverse(Node n){
 
-        if(n != null){
+    public void search(int i, Node n){
+
+
+        if (i != count){
+            //System.out.println(count);
+
+            count++;
+            search(i , n.next);
+
+        } else{
+            //System.out.println(n.data);
+            data = n.data;
+        }
+
+        /*if(count == i){
             System.out.println(n.data);
-            traverse(n.next);
-        }
+            data = n.data;
+        }*/
 
     }
+
+
+
 
 
 }

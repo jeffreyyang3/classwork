@@ -5,8 +5,8 @@ public class LinkedListTest {
     public static void main(String[] args){
         // the first item in the linked list
         LinkedList fibNums = new LinkedList();
-        fibNums.push(1);
-        fibNums.push(1);
+        fibNums.push(10);
+        fibNums.push(11);
         fibNums.push(2);
         fibNums.push(3);
         fibNums.push(5);
@@ -17,8 +17,8 @@ public class LinkedListTest {
         fibNums.push(55);
         fibNums.push(89);
         fibNums.push(144);
-        fibNums.pop();
-        fibNums.insert(2,1232,fibNums.head);
+        //fibNums.pop();
+        //fibNums.insert(3,1232,fibNums.head);
 
         //fibNums.traverse(fibNums.head);
 
