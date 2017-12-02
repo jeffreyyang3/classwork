@@ -30,13 +30,19 @@ public class BoardMember extends Employee{
     void useSickDay(){
         usedSickDays++;
     } // adds one to usedSickDays
+
     void workYear(){
         super.setYears(super.getYears() + 1);
 
-
-
-
     } // adds one to yearsWorked.
+
+    double YTDValue(){
+        return (YEARLY_BONUS + HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260) (SICK_LEAVE - usedSickDays) * ((INCOME / 260) / 2) )
+    }
+
+    int yearsTillRetirement(){
+        return (int)((double)( 35 -(yearsWorked + (usedUnpaidVacation / 260) + ((usedVacation / 260) * 2) + (usedSickDays / 260))))
+    }
 
 
 
