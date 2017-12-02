@@ -36,12 +36,13 @@ public class BoardMember extends Employee{
 
     } // adds one to yearsWorked.
 
+    @Override
     double YTDValue(){
-        return (YEARLY_BONUS + HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260) (SICK_LEAVE - usedSickDays) * ((INCOME / 260) / 2) )
+        return (YEARLY_BONUS + HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260) * (SICK_LEAVE - usedSickDays) * ((INCOME / 260) / 2));
     }
 
     int yearsTillRetirement(){
-        return (int)((double)( 35 -(yearsWorked + (usedUnpaidVacation / 260) + ((usedVacation / 260) * 2) + (usedSickDays / 260))))
+        return (int)(( 35 -((double)super.getYears() + ((double) usedUnpaidVacation / 260) + (((double) usedVacation / 260) * 2) + ((double) usedSickDays / 260))));
     }
 
 

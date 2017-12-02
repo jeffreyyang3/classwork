@@ -2,7 +2,7 @@
  *
  */
 
-//asdf
+//asdf12
 public class Employee {
     Employee(){};
     private int yearsWorked = 0;
@@ -13,13 +13,14 @@ public class Employee {
         return 0;
     }
     int yearsTillRetirement() {
-        return 35 - yearsWorked
+        return 35 - yearsWorked;
     }
     void setYears(int x){
         yearsWorked = x;
     }
     int getYears(){
-        return yearsWorked
+        return yearsWorked;
     }
+
 
 }
