@@ -16,6 +16,7 @@ public class ShoppingCartPrinter {
         System.out.println("Enter the item quantity:");
         item1.setQuantity(scan.nextInt());
         System.out.println();
+    
 
         Scanner why = new Scanner(System.in);
         System.out.println("Item 2");

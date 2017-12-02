@@ -1,6 +1,6 @@
 /**
  * Created by Jeffrey Yang on 12/1/2017.
- */ //8
+ */ //9
 
 public class BoardMember extends Employee{
     BoardMember(int yearsWorked){
