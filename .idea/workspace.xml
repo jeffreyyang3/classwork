@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7173726-3502-43a3-a440-90c34b293aa4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Payroll.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -286,7 +285,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512268749151</updated>
-      <workItem from="1512268751039" duration="3764000" />
+      <workItem from="1512268751039" duration="3781000" />
     </task>
     <task id="LOCAL-00001" summary="e2">
       <created>1512271090883</created>
@@ -302,11 +301,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512272490479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="e3">
+      <created>1512273657912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1512273657912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3764000" />
+    <option name="totallyTimeSpent" value="3781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="960" height="1057" extended-state="0" />
