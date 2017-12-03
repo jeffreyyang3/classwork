@@ -4,7 +4,7 @@
  */
 import java.util.*;
 import java.util.Arrays;
-public class PeopleWeights {
+public class PeopleWeights { //asdf
     public static void main(String[] args) {
         final int size = 5;
         double sum = 0;
