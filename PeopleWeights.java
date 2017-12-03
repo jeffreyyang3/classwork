@@ -1,9 +1,6 @@
 
-/**
- * Created by JeffreyYang on 10/22/17.
- */
 import java.util.*;
-import java.util.Arrays;
+
 public class PeopleWeights { //asdf
     public static void main(String[] args) {
         final int size = 5;
@@ -25,7 +22,6 @@ public class PeopleWeights { //asdf
         System.out.println();
         for (int i = 0; i < 5; i++){
             sum += weights[i];
-
         }
         System.out.println();
         System.out.println("Total weight: " + sum);
