@@ -3,6 +3,7 @@
  * Created by JeffreyYang on 11/6/17.
  */
 public class ItemToPurchase {
+    //1234
     private int itemPrice = 0;
     private int itemQuantity = 0;
     private String itemName = "none";
