@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7173726-3502-43a3-a440-90c34b293aa4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Accountant.java" afterPath="$PROJECT_DIR$/Accountant.java" />
       <change beforePath="$PROJECT_DIR$/BoardMember.java" afterPath="$PROJECT_DIR$/BoardMember.java" />
-      <change beforePath="$PROJECT_DIR$/Custodian.java" afterPath="$PROJECT_DIR$/Custodian.java" />
-      <change beforePath="$PROJECT_DIR$/Engineer.java" afterPath="$PROJECT_DIR$/Engineer.java" />
-      <change beforePath="$PROJECT_DIR$/Intern.java" afterPath="$PROJECT_DIR$/Intern.java" />
-      <change beforePath="$PROJECT_DIR$/Marketer.java" afterPath="$PROJECT_DIR$/Marketer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,8 +75,8 @@
       <file leaf-file-name="BoardMember.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BoardMember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="28">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -163,10 +158,10 @@
         <option value="$PROJECT_DIR$/Intern.java" />
         <option value="$PROJECT_DIR$/Custodian.java" />
         <option value="$PROJECT_DIR$/Engineer.java" />
-        <option value="$PROJECT_DIR$/BoardMember.java" />
         <option value="$PROJECT_DIR$/Marketer.java" />
         <option value="$PROJECT_DIR$/PayrollTest.java" />
         <option value="$PROJECT_DIR$/Accountant.java" />
+        <option value="$PROJECT_DIR$/BoardMember.java" />
       </list>
     </option>
   </component>
@@ -411,7 +406,7 @@
       <workItem from="1512274795461" duration="244000" />
       <workItem from="1512293370568" duration="118000" />
       <workItem from="1512442068231" duration="2072000" />
-      <workItem from="1512449879211" duration="3004000" />
+      <workItem from="1512449879211" duration="3736000" />
     </task>
     <task id="LOCAL-00001" summary="e2">
       <created>1512271090883</created>
@@ -462,11 +457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512451320890</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="e3">
+      <created>1512453362871</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1512453362871</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9354000" />
+    <option name="totallyTimeSpent" value="10086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1435" height="875" extended-state="6" />
@@ -894,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BoardMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        <state relative-caret-position="28">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
           <folding />
         </state>
       </provider>
