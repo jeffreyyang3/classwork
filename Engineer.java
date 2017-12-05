@@ -24,6 +24,6 @@ public class Engineer extends Employee {
         return(YEARLY_BONUS+HEALTH_INSURANCE+INCOME+PAID_VACATION * (INCOME/260));
     }
     int yearsTillRetirement(){
-        return(35 - (super.getYears() + (usedUnpaidVacation / 260) + ((usedVacation / 260) * 2)));
+        return (int) Math.ceil(35 - (super.getYears() + (usedUnpaidVacation / 260) + ((usedVacation / 260) * 2)));
     }
 }

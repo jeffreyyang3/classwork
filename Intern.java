@@ -17,7 +17,7 @@ public class Intern extends Employee{
         return HEALTH_INSURANCE + INCOME;
     }
     int yearsTillRetirement(){
-        return (int) (35 - (super.getYears() + ((double) usedUnpaidVacation / 260)));
+        return (int) Math.ceil(35 - ((double)super.getYears() + ((double) usedUnpaidVacation / 260)));
     }
 
 

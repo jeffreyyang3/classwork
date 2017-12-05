@@ -24,6 +24,6 @@ public class Custodian extends Employee{
         return(HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260));
     }
     int yearsTillRetirement(){
-        return((int)(35 - (super.getYears() + ((double) usedUnpaidVacation / 260) + (((double)usedVacation / 260) * 2))));
+        return (int) Math.ceil(35 - (super.getYears() + ((double) usedUnpaidVacation / 260) + (((double)usedVacation / 260) * 2)));
     }
 }

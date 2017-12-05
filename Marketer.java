@@ -31,6 +31,6 @@ public class Marketer extends Employee {
         return (CLIENT_BONUS * numBonuses + HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260));
     }
     int yearsTillRetirement(){
-        return (int) (35 - (super.getYears() + ((double) usedUnpaidVacation / 260) + (((double)usedVacation / 260) * 2)));
+        return (35 - (super.getYears() + (usedUnpaidVacation / 260) + ((usedVacation / 260) * 2)));
     }
 }

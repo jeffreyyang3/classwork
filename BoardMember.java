@@ -42,7 +42,7 @@ public class BoardMember extends Employee{
     }
 
     int yearsTillRetirement(){
-        return (int)(( 35 -((double)super.getYears() + ((double) usedUnpaidVacation / 260) + (((double) usedVacation / 260) * 2) + ((double) usedSickDays / 260))));
+        return (int) Math.ceil(( 35 -((double)super.getYears() + ((double) usedUnpaidVacation / 260) + (((double) usedVacation / 260) * 2) + ((double) usedSickDays / 260))));
     }
 
 
