@@ -14,7 +14,7 @@ public class Accountant extends Employee {
     void usePaidVacation(){
         usedVacation++;
     }
-    void useUnPaidVacation(){
+    void useUnpaidVacation(){
         usedUnpaidVacation++;
     }
     void workYear(){
