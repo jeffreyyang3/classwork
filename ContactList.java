@@ -47,7 +47,7 @@ public class ContactList {
             System.out.println();
 
         }
-        System.out.println();
+        System.out.println(one.getNext().getName());
 
 
 
