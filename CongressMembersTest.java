@@ -4,7 +4,6 @@
 // Sorting Approval Ratings
 // This program reads a text file, uses the CongressMembers class to store those values and performs some sorting operations with them
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

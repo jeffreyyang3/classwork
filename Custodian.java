@@ -1,3 +1,8 @@
+// Custodian.java
+// Jeffrey Yang
+// 1606512
+// Sorting Approval Ratings
+// Getter and setter methods for CongressMembersTest
 public class Custodian extends Employee{
     Custodian(int yearsWorked){
         super.setYears(yearsWorked);
