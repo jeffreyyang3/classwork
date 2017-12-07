@@ -30,24 +30,32 @@ public class ContactList {
         ContactNode one = new ContactNode(name1, number1);
         ContactNode two = new ContactNode(name2, number2);
         ContactNode three = new ContactNode(name3, number3);
-        two.insertAfter(one);
-        three.insertAfter(two);
-        ContactNode test = one;
+        one.insertAfter(two);
+        two.insertAfter(three);
 
         System.out.println("CONTACT LIST");
-        System.out.println("Name: " + test.getName());
-        System.out.println("Phone number: " + test.getPhoneNumber());
-        System.out.println();
+        //System.out.println("Name: " + test.getName());
+        //System.out.println("Phone number: " + test.getPhoneNumber());
+        //System.out.println();
 
-
-        while(test.getNext() != null){
-            test = test.getNext();
-            System.out.println("Name: " + test.getName());
-            System.out.println("Phone number: " + test.getPhoneNumber());
-            System.out.println();
-
+        for(ContactNode temp=one;temp!=null;temp=temp.getNext()){
+            temp.printContactNode();
+            System.out.println("");
         }
-        System.out.println(three.getNext().getName());
+//
+//
+//            System.out.println("Name: " + one.getName());
+//            System.out.println("Phone number: " + one.getPhoneNumber());
+//            System.out.println();
+//        System.out.println("Name: " + two.getName());
+//        System.out.println("Phone number: " + two.getPhoneNumber());
+//        System.out.println();
+//        System.out.println("Name: " + three.getName());
+//        System.out.println("Phone number: " + three.getPhoneNumber());
+//        System.out.println();
+
+
+        //System.out.println(one.getNext().getName());
 
 
 

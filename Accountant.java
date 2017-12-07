@@ -1,3 +1,9 @@
+// Accountant.java
+// Jeffrey Yang
+// 1606512
+// Payroll for start up company
+// methods for accountant class that extends employee class
+
 public class Accountant extends Employee {
     //asdf
     Accountant(int yearsWorked){

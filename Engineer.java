@@ -1,3 +1,8 @@
+// Engineer.java
+// Jeffrey Yang
+// 1606512
+// Payroll for start up company
+// methods for engineer class that extends employee class
 public class Engineer extends Employee {
    Engineer(int yearsWorked){
        super.setYears(yearsWorked); //constructor
@@ -11,13 +16,13 @@ public class Engineer extends Employee {
     int usedVacation; // keeps track of how much paid vacation has been used.
     void useUnpaidVacation(){
         usedUnpaidVacation++;
-    }
+    } //adds one to used unpaid vacation
     void usePaidVacation(){
         usedVacation++;
-    }
+    } // adds one to used paid vacation
     void workYear(){
         super.setYears(getYears() + 1);
-    }
+    } //adds one to years worked
 
     @Override
     double YTDValue() {

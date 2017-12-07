@@ -25,14 +25,14 @@ public class ContactNode {
 
     public void printContactNode(){
         System.out.println("Name: " + name);
-        System.out.println("Phone Number: " + number);
+        System.out.println("Phone number: " + number);
     }
 
     public void insertAfter(ContactNode previous){
-        this.nextNodePtr = previous.nextNodePtr;
 
 
-        previous.nextNodePtr = this;
+        previous.nextNodePtr = this.nextNodePtr;
+        this.nextNodePtr = previous;
 
 
 

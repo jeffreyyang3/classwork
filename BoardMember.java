@@ -1,6 +1,8 @@
-/**
- * Created by Jeffrey Yang on 12/1/2017.
- */ //888
+// Jeffrey Yang
+//BoardMember.java
+//1606512
+// Payroll for start up company
+//Methods for boardmember class, which extends employee class
 
 public class BoardMember extends Employee{
     BoardMember(int yearsWorked){
@@ -21,11 +23,11 @@ public class BoardMember extends Employee{
 
     void usePaidVacation(){
         usedVacation++;
-    }
+    } // adds one to usedvacation
 
     void useUnpaidVacation(){
         usedUnpaidVacation++;
-    }
+    } //adds one to usedunpaidvacation
 
     void useSickDay(){
         usedSickDays++;
@@ -39,11 +41,11 @@ public class BoardMember extends Employee{
     @Override
     double YTDValue(){
         return (YEARLY_BONUS + HEALTH_INSURANCE + INCOME + PAID_VACATION * (INCOME / 260) + (SICK_LEAVE - usedSickDays) * ((INCOME / 260) / 2));
-    }
+    } //adds/multiples/divides variables to get YTDValue
 
     int yearsTillRetirement(){
         return (int) Math.ceil(( 35 -((double)super.getYears() + ((double) usedUnpaidVacation / 260) + (((double) usedVacation / 260) * 2) + ((double) usedSickDays / 260))));
-    }
+    } //adds/multiples/divides variables to get years till retirement
 
 
 

@@ -1,3 +1,8 @@
+// Marketer.java
+// Jeffrey Yang
+// 1606512
+// Payroll for start up company
+// methods for marketer class that extends employee class
 public class Marketer extends Employee {
     Marketer(int yearsWorked){
         super.setYears(yearsWorked);

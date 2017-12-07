@@ -1,3 +1,9 @@
+// Intern.java
+// Jeffrey Yang
+// 1606512
+// Payroll for start up company
+// methods for intern class that extends employee class
+
 public class Intern extends Employee{
     Intern(int yearsworked){
         super.setYears(yearsworked);
