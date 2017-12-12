@@ -2,26 +2,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class FinalPractice {
+public class FinalPractice implements ActionListener {
     public static void main(String []args){
         //String[] arry = new String[]{"asdf", "gdhdf" , "eqweq","asdf", "dankman", "asdff"};
         //System.out.println(findIndex(arry, "dankman"));
         //System.out.println(fib(7));
-
-
-        JFrame frame = new JFrame("test");
-        Container display = frame.getContentPane();
-        JTextField coolman = new JTextField("test2");
-        frame.setSize(500, 500);
-        frame.setLayout(new GridLayout(3,3));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JTextField dankman = new JTextField("asdf");
-        frame.add(dankman);
-        frame.add(coolman);
-        dankman.setEditable(false);
-        frame.pack();
-
-        frame.setVisible(true);
+        Container display = new Container();
 
 
 
@@ -30,14 +16,9 @@ public class FinalPractice {
 
 
 
-
-
-
-
-
-
-
-
+    }
+    public void actionPerformed(ActionEvent e){
+        System.out.println("test");
 
     }
     static int findIndex(String[] ar, String s){
@@ -76,5 +57,13 @@ public class FinalPractice {
         }
         return sum;
     }
+    /*
 
+
+
+
+
+
+
+*/
 }
