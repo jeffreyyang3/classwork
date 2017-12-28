@@ -18,13 +18,19 @@ public class LinkedListTest {
         fibNums.push(89);
         fibNums.push(144);
         //fibNums.pop();
-        //fibNums.insert(3,1232,fibNums.head);
+        fibNums.insert(3,1232,fibNums.head);
 
-        //fibNums.traverse(fibNums.head);
+        fibNums.traverse(fibNums.head);
 
 
 
-        System.out.println(fibNums.find(13, fibNums.head));
+        System.out.println(fibNums.find(4, fibNums.head));
+        int one = 2;
+        int two = one;
+        one++;
+        System.out.println(one);
+        System.out.println(two);
+
 
 
 

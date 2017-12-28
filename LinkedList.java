@@ -1,10 +1,12 @@
 
 public class LinkedList {
     Node head;
-    int size;
-    int count = 0;
-    int countsize;
-    int data;
+    private int size;
+    private int count = 0;
+    private int countsize;
+    private int data;
+    private int counter = 0;
+
 
     LinkedList(){
         this.head = null;
@@ -13,11 +15,11 @@ public class LinkedList {
     }
 
     public void push(int i){
-        Node temp = head;
+        Node temp = this.head;
 
         if (temp == null) {
             size++;
-            head = new Node(i, null);
+            this.head = new Node(i, null);
             return;
         }
 
@@ -43,7 +45,7 @@ public class LinkedList {
         }
 
         if(a == head){
-            count = 1;
+            count++;
         }
 
 
@@ -60,12 +62,12 @@ public class LinkedList {
         }
 
     }
-    public int find(int i, Node n){
+    /*public int find(int i, Node n){
         //System.out.println(n.data);
         if(i>size){
             return -1;
         }
-        System.out.println(size);
+        //System.out.println(size);
         count = 1;
         search(i, n);
 
@@ -79,6 +81,7 @@ public class LinkedList {
 
 
     }
+    */
 
     public void search(int i, Node n){
 
@@ -99,6 +102,35 @@ public class LinkedList {
             data = n.data;
         }*/
 
+    }
+    public int find(int i, Node n){
+
+
+
+        if(n == head){
+            System.out.println("value at place " + i);
+            counter = 1;
+        }
+        if(i > size){
+            return -1;
+        }
+        if(counter == i){
+            return n.data;
+        }
+        else{
+            counter++;
+            return(find(i, n.next));
+
+        }
+
+    }
+    public void traverse(Node n){
+
+        if(n != null){
+            System.out.println(n.data);
+            traverse(n.next);
+
+        }
     }
 
 
