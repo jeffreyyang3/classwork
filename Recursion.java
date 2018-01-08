@@ -7,6 +7,12 @@ public class Recursion {
         for(int i = 0; i < arry.length; i++){
             System.out.println(output[i]);
         }
+        System.out.println();
+        reverseArray3(0,4,arry);
+        for(int i = 0; i < arry.length; i++){
+            System.out.println(arry[i]);
+        }
+
     }
 
 
@@ -15,6 +21,14 @@ public class Recursion {
         if(n != 0){
             y[n - 1] = x[x.length - n];
             reverseArray1(x,y,n-1);
+        }
+    }
+    private static void reverseArray3(int i, int j, int[]x){
+        if(i != j){
+            int temp = x[i];
+            x[i] = x[j];
+            x[j] = temp;
+            reverseArray3(i+1,j-1,x);
         }
     }
 
