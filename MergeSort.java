@@ -6,35 +6,35 @@ public class MergeSort {
 
    // mergeSort()
    // sort subarray A[p...r]
-   public static void mergeSort(int[] A, int p, int r){
-      int q;
-      if(p < r) {
-         q = (p+r)/2;
-         System.out.println(p+" "+q+" "+r);
-         mergeSort(A, p, q);
-         mergeSort(A, q+1, r);
-         merge(A, p, q, r);
+   public static void mergeSort(int[] A, int firstindex, int lastindex){
+      int midpoint;
+      if(firstindex < lastindex) {
+         midpoint = (firstindex+lastindex)/2;
+         System.out.println(firstindex+" "+ midpoint +" "+lastindex);
+         mergeSort(A, firstindex, midpoint);
+         mergeSort(A, midpoint+1, lastindex);
+         merge(A, firstindex, midpoint, lastindex);
       }
    }
 
    // merge()
    // merges sorted subarrays A[p..q] and A[q+1..r]
-   public static void merge(int[] A, int p, int q, int r){
-      int n1 = q-p+1;
-      int n2 = r-q;
+   public static void merge(int[] A, int lowerindex, int midpoint, int upperindex){
+      int n1 = midpoint-lowerindex+1;
+      int n2 = upperindex-midpoint;
       int[] L = new int[n1];
       int[] R = new int[n2];
       int i, j, k;
 
       for(i=0; i<n1; i++){
-         L[i] = A[p+i];
+         L[i] = A[lowerindex+i];
       }
       for(j=0; j<n2; j++){ 
-         R[j] = A[q+j+1];
+         R[j] = A[midpoint+j+1];
       }
 
       i = 0; j = 0;
-      for(k=p; k<=r; k++){
+      for(k=lowerindex; k<=upperindex; k++){
          if( i<n1 && j<n2 ){
             if( L[i]<R[j] ){
                A[k] = L[i];
