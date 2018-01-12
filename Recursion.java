@@ -2,18 +2,18 @@ import java.util.Arrays;
 
 public class Recursion {
     public static void main(String[] args) {
-        int[] arry = new int[]{8,7,2,5,2,1};
+        int[] arry = new int[]{1,4,5,6,2,2,4,5};
         System.out.println("test1");
+        int max;
         int[] output = new int[arry.length];
-        reverseArray2(arry, output, arry.length);
+        //reverseArray3(0, arry.length-1, arry);
         for (int i = 0; i < arry.length; i++) {
-            System.out.println(output[i]);
+            System.out.println(arry[i]);
         }
         System.out.println();
-        maxArrayIndex(arry,0,arry.length-1);
-        for (int x : arry) {
-            System.out.println(x);
-        }
+        System.out.println(maxArrayIndex(arry,0,arry.length) - 1);
+
+
 
     }
 
@@ -27,7 +27,7 @@ public class Recursion {
     }
 
     private static void reverseArray2(int[] x, int[] y, int n) {
-        if (n != 0) {
+        if (n <= 0) {
             y[x.length - n] = x[n - 1];
             reverseArray2(x, y, n - 1);
         }
@@ -35,7 +35,10 @@ public class Recursion {
     }
 
     private static void reverseArray3(int i, int j, int[] x) {
-        if (i != j) {
+        if(i >j){
+
+        }
+        else {
             int temp = x[i];
             x[i] = x[j];
             x[j] = temp;
@@ -43,59 +46,26 @@ public class Recursion {
         }
     }
 
-    private static void maxArrayIndex(int[] x, int p, int r) {
+    private static int maxArrayIndex(int[] x, int p, int r) {
         int q = 0;
+
         if (p == r) {
-            return;
+            return 0;
         } else {
             q = p + (r - p)/2;
             maxArrayIndex(x, p, q);
             maxArrayIndex(x, q +1, r);
 
         }
-        int n1 = q - p +1;
-        int n2 = r - q;
-        int leftmax,rightmax,i,j,k;
-        int[] left = new int[n1];
-        int[] right = new int[n2];
-        for(i = 0; i < n1; i++){
-            left[i] = x[p+i];
+        if(x[p] > x[q]){
+            return p;
         }
-        for(j = 0; j < n2; j++){
-            right[j] = x[q+j+1];
+        else{
+            return q;
         }
-        i = 0;
-        j = 0;
-        //System.out.println("HI: " + p + " " + r);
-        //System.out.println(Arrays.toString(left));
-        //System.out.println(Arrays.toString(right));
-        for(k = p; k <= r; k++){
-            if(i < n1 && j <n2){
-                if(left[i] < right[j]){
-                    x[k] = left[i];
-                    rightmax = j;
-                    i++;
-                }
-                else{
-                    x[k] = right[j];
-                    leftmax = i;
-                    j++;
-                }
 
 
-            }
-            else if(i<n1){
-                x[k] = left[i];
-                leftmax = i;
-                i++;
-            }
-            else{
-                x[k] = right[j];
-                rightmax = j;
-                j++;
-            }
 
-        }
 
 
 

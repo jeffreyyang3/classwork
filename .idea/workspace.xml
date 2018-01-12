@@ -4,8 +4,7 @@
     <list default="true" id="a7173726-3502-43a3-a440-90c34b293aa4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Recursion.java" afterPath="$PROJECT_DIR$/Recursion.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/swagman/MergeSort.class" afterPath="$PROJECT_DIR$/out/production/swagman/MergeSort.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/swagman/Recursion.class" afterPath="$PROJECT_DIR$/out/production/swagman/Recursion.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/swagman/Recursion.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,26 +14,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/MergeSort.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="560">
-                    <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="swagman" />
   </component>
@@ -43,8 +22,8 @@
       <file leaf-file-name="Recursion.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Recursion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -111,7 +90,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="718" />
     <option name="y" value="23" />
     <option name="width" value="718" />
     <option name="height" value="877" />
@@ -706,7 +686,7 @@
       <workItem from="1515717178632" duration="79000" />
       <workItem from="1515720786502" duration="202000" />
       <workItem from="1515721114309" duration="23000" />
-      <workItem from="1515722806173" duration="8361000" />
+      <workItem from="1515722806173" duration="12764000" />
     </task>
     <task id="LOCAL-00001" summary="e2">
       <created>1512271090883</created>
@@ -869,14 +849,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515744317968</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ra3">
+      <created>1515744942905</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1515744942905</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77958000" />
+    <option name="totallyTimeSpent" value="82361000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1435" height="877" extended-state="6" />
+    <frame x="718" y="23" width="718" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1241,8 +1228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Recursion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
