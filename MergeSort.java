@@ -26,18 +26,18 @@ public class MergeSort {
       int[] R = new int[n2];
       int i, j, k;
 
-      for(i=0; i<n1; i++){
+      for(i=0; i<n1; i++){ //fills L with first half of A
          L[i] = A[lowerindex+i];
       }
-      for(j=0; j<n2; j++){ 
+      for(j=0; j<n2; j++){ //Fills R with second half of A
          R[j] = A[midpoint+j+1];
       }
 
       i = 0; j = 0;
-      for(k=lowerindex; k<=upperindex; k++){
-         if( i<n1 && j<n2 ){
-            if( L[i]<R[j] ){
-               A[k] = L[i];
+      for(k=lowerindex; k<=upperindex; k++){ //iterate through/compare values in L and R
+         if( i<n1 && j<n2 ){ //when not all values have been compared
+            if( L[i]<R[j] ){ // if left i is less than right j 
+               A[k] = L[i]; // fill 
                i++;
             }else{
                A[k] = R[j];
@@ -58,7 +58,7 @@ public class MergeSort {
       int[] B = {9,8,7,6,5,4,3,2,1};
 
       mergeSort(B, 0, B.length-1);
-      for(int i=0; i<B.length; i++) 
+      for(int i=0; i<B.length; i++)
          System.out.print(B[i]+" ");
       System.out.println();
    }

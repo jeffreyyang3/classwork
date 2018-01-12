@@ -4,7 +4,7 @@ public class Recursion {
         int[] arry = new int[] {1,2,3,4,5};
 	System.out.println("test1");
         int[] output = new int[5];
-        reverseArray1(arry, output, 5);
+        reverseArray2(arry, output, 5);
         for(int i = 0; i < arry.length; i++){
             System.out.println(output[i]);
         }
@@ -23,6 +23,13 @@ public class Recursion {
             y[n - 1] = x[x.length - n];
             reverseArray1(x,y,n-1);
         }
+    }
+    private static void reverseArray2(int[] x, int[]y, int n){
+        if(n != 0){
+            y[x.length - n] = x[n-1];
+            reverseArray2(x,y, n-1);
+        }
+
     }
     private static void reverseArray3(int i, int j, int[]x){
         if(i != j){
