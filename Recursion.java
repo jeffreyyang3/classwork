@@ -11,8 +11,8 @@ public class Recursion {
         }
         System.out.println();
         maxArrayIndex(arry,0,arry.length-1);
-        for (int i = 0; i < arry.length; i++) {
-            System.out.println(arry[i]);
+        for (int x : arry) {
+            System.out.println(x);
         }
 
     }
@@ -94,7 +94,7 @@ public class Recursion {
                 rightmax = j;
                 j++;
             }
-            //System.out.println("Array: " + x[k] + " " + k);
+
         }
 
 
