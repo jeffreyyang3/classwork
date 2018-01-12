@@ -37,16 +37,16 @@ public class MergeSort {
       for(k=lowerindex; k<=upperindex; k++){ //iterate through/compare values in L and R
          if( i<n1 && j<n2 ){ //when not all values have been compared
             if( L[i]<R[j] ){ // if left i is less than right j 
-               A[k] = L[i]; // fill 
+               A[k] = L[i]; // fill that index (k)  of A with the value from left array  
                i++;
-            }else{
+            }else{ //if not, fill index k of A with the value from right array
                A[k] = R[j];
-               j++;
+               j++; //increment(eliminate index)
             }
-         }else if( i<n1 ){
+         }else if( i<n1 ){ //if one has finished, only one side will keep going 
             A[k] = L[i];
-            i++;
-         }else{ // j<n2
+            i++; 
+         }else{ // j<n2 if n1 has been exhausted 
             A[k] = R[j];
             j++;
          }
@@ -63,3 +63,4 @@ public class MergeSort {
       System.out.println();
    }
 }
+ 
