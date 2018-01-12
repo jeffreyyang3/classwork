@@ -55,7 +55,6 @@ public class Recursion {
             q = p + (r - p)/2;
             maxArrayIndex(x, p, q);
             maxArrayIndex(x, q +1, r);
-
         }
         if(x[p] > x[q]){
             return p;
@@ -63,6 +62,7 @@ public class Recursion {
         else{
             return q;
         }
+
 
 
 
