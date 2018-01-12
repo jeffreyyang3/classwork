@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Recursion {
     public static void main(String[] args) {
-        int[] arry = new int[]{1,4,5,6,2,2,4,5};
+        int[] arry = new int[]{2,3,5,1,3,5,69};
         System.out.println("test1");
         int max;
         int[] output = new int[arry.length];
@@ -11,7 +11,7 @@ public class Recursion {
             System.out.println(arry[i]);
         }
         System.out.println();
-        System.out.println(maxArrayIndex(arry,0,arry.length) - 1);
+        System.out.println(maxArrayIndex(arry,0,arry.length-1));
 
 
 
@@ -47,20 +47,23 @@ public class Recursion {
     }
 
     private static int maxArrayIndex(int[] x, int p, int r) {
-        int q = 0;
 
-        if (p == r) {
-            return 0;
-        } else {
-            q = p + (r - p)/2;
-            maxArrayIndex(x, p, q);
-            maxArrayIndex(x, q +1, r);
-        }
-        if(x[p] > x[q]){
+
+
+
+        if (p >= r) {
             return p;
         }
         else{
-            return q;
+            int q = (p+r)/2;
+            int lowerBound = maxArrayIndex(x,p,q);
+            int upperBound = maxArrayIndex(x,q+1,r);
+            if(x[lowerBound] > x[upperBound]){
+                return lowerBound;
+            }
+            else{
+                return upperBound;
+            }
         }
 
 
@@ -70,6 +73,62 @@ public class Recursion {
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+        /*int max = 0;
+        int max1 = 0;
+        int maxindex = 0;
+        int maxindex1 = 0;
+        int q = 0;
+
+        if (p == r) {
+            return 0;
+        } else {
+            q = p + (r - p)/2;
+            maxArrayIndex(x, p, q);
+            maxArrayIndex(x, q +1, r);
+        }
+        for(int i = p; i < q; i++){
+
+            if(x[i] > max){
+                max = x[i];
+                maxindex = i;
+            }
+        }
+        for(int j = q; j < r; j++){
+            max = x[j];
+            maxindex1 = j;
+        }
+
+        System.out.println("max left " + maxindex + "max right " + maxindex1);
+
+
+
+        if(x[p] > x[q]){
+            return p;
+        }
+        else{
+            return q;
+        }
+*/
+
+
+
+
+
+
+
+
 
 
 
