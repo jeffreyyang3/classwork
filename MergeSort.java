@@ -39,7 +39,8 @@ public class MergeSort {
             if( L[i]<R[j] ){ // if left i is less than right j 
                A[k] = L[i]; // fill that index (k)  of A with the value from left array  
                i++;
-            }else{ //if not, fill index k of A with the value from right array
+            }
+            else{ //if not, fill index k of A with the value from right array
                A[k] = R[j];
                j++; //increment(eliminate index)
             }
