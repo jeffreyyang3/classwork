@@ -58,9 +58,10 @@ public class MergeSort {
       int[] B = {9,8,7,6,5,4,3,2,1};
 
       mergeSort(B, 0, B.length-1);
-      for(int i=0; i<B.length; i++)
-         System.out.print(B[i]+" ");
-      System.out.println();
+      for(int i=0; i<B.length; i++) {
+          System.out.print(B[i] + " ");
+          System.out.println();
+      }
    }
 }
  
