@@ -39,16 +39,18 @@ public class Recursion {
 		}
 	}	
 	private static int maxArrayIndex(int[] x, int p, int r){
+		int q;
 		if(x.length == 1){
 			return 0;
 		}
 		else{
-			int q = (p+r)/2;
+			q = (p+r)/2;
 			maxArrayIndex(x,p,q);
 			maxArrayIndex(x,q+1,r);
 
 		}
-		return 1;
+		int n1 = q-p+1;
+		int n2 = r-q;
 
 
 	}
