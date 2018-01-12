@@ -9,8 +9,8 @@ public class Recursion {
         for (int i = 0; i < arry.length; i++) {
             System.out.println(output[i]);
         }
-        System.out.println();
         maxArrayIndex(arry,0,arry.length-1);
+        System.out.println();
         for (int x : arry) {
             System.out.println(x);
         }
@@ -55,7 +55,9 @@ public class Recursion {
         }
         int n1 = q - p +1;
         int n2 = r - q;
-        int leftmax,rightmax,i,j,k;
+        int i,j,k;
+        int leftmax = 0;
+        int rightmax = 0;
         int[] left = new int[n1];
         int[] right = new int[n2];
         for(i = 0; i < n1; i++){
@@ -66,9 +68,7 @@ public class Recursion {
         }
         i = 0;
         j = 0;
-        //System.out.println("HI: " + p + " " + r);
-        //System.out.println(Arrays.toString(left));
-        //System.out.println(Arrays.toString(right));
+
         for(k = p; k <= r; k++){
             if(i < n1 && j <n2){
                 if(left[i] < right[j]){
@@ -95,7 +95,10 @@ public class Recursion {
                 j++;
             }
 
+
         }
+
+
 
 
 
