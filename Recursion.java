@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class Recursion {
     public static void main(String[] args){
@@ -13,8 +13,8 @@ public class Recursion {
         System.out.println( "maxIndex = " + maxIndex );
         reverseArray1(A, A.length, B);
         for(int x: B) System.out.print(x+" ");
-        System.out.println();
         reverseArray2(A, A.length, C);
+        System.out.println();
         for(int x: C) System.out.print(x+" ");
         System.out.println();
         reverseArray3(A, 0, A.length - 1);
@@ -32,7 +32,7 @@ public class Recursion {
     }
 
     private static void reverseArray2(int[] x, int n, int[] y) {
-        if (n <= 0) {
+        if (n != 0) {
             y[x.length - n] = x[n - 1];
             reverseArray2(x,n - 1,y);
         }
