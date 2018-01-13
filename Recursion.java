@@ -11,7 +11,7 @@ public class Recursion {
             System.out.println(arry[i]);
         }
         System.out.println();
-        System.out.println(maxArrayIndex(arry,0,arry.length-1));
+        System.out.println(minArrayIndex(arry,0,arry.length-1));
 
 
 
@@ -48,9 +48,6 @@ public class Recursion {
 
     private static int maxArrayIndex(int[] x, int p, int r) {
 
-
-
-
         if (p >= r) {
             return p;
         }
@@ -65,14 +62,24 @@ public class Recursion {
                 return upperBound;
             }
         }
-
-
-
-
-
-
-
     }
+    private static int minArrayIndex(int[]x, int p, int r){
+        if(p >= r){
+            return p;
+        }
+        else{
+            int q = (p+r) / 2;
+            int lowerBound = minArrayIndex(x,p,q);
+            int upperBound = minArrayIndex(x,q+1,r);
+            if (x[lowerBound] < x[upperBound]) {
+                return lowerBound;
+            }
+            else{
+                return upperBound;
+            }
+        }
+    }
+
 
 
 
