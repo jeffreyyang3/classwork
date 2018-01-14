@@ -1,3 +1,8 @@
+//Jeffrey Yang
+//1606512
+//CMPS 12B
+// 1/13/2018
+// Recursive methods for reversing arrays and finding indices of maximum and minimum values in an array
 
 
 public class Recursion {
@@ -23,7 +28,7 @@ public class Recursion {
     }
 
 
-    private static void reverseArray1(int[] x, int n, int []y) {
+    private static void reverseArray1(int[] x, int n, int []y) { // copies left most n elements into rightmost n positions of output array in reverse order
 
         if (n != 0) {
             y[n - 1] = x[x.length - n];
@@ -31,7 +36,7 @@ public class Recursion {
         }
     }
 
-    private static void reverseArray2(int[] x, int n, int[] y) {
+    private static void reverseArray2(int[] x, int n, int[] y) { // reverseArray1 but copy order is done in reverse
         if (n != 0) {
             y[x.length - n] = x[n - 1];
             reverseArray2(x,n - 1,y);
@@ -39,7 +44,7 @@ public class Recursion {
 
     }
 
-    private static void reverseArray3(int[] x, int i, int j) {
+    private static void reverseArray3(int[] x, int i, int j) { // reverses array by directly swapping the values in the array
         if(i >j){
 
         }
@@ -51,7 +56,7 @@ public class Recursion {
         }
     }
 
-    private static int maxArrayIndex(int[] x, int p, int r) {
+    private static int maxArrayIndex(int[] x, int p, int r) { // uses procedure similar to the first part of mergesort to compare every value in the array
 
         if (p >= r) {
             return p;
@@ -68,7 +73,7 @@ public class Recursion {
             }
         }
     }
-    private static int minArrayIndex(int[]x, int p, int r){
+    private static int minArrayIndex(int[]x, int p, int r){ // same procedure as maxArrayIndex but seeks the lowest value instead of highest
         if(p >= r){
             return p;
         }
