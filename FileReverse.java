@@ -14,7 +14,7 @@ class FileReverse{
 			System.exit(1);
 		}
 
-		// open files
+		// open filesbn
 		in = new Scanner(new File(args[0]));
 		out = new PrintWriter(new FileWriter(args[1]));
 
