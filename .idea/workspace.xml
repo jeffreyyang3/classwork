@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7173726-3502-43a3-a440-90c34b293aa4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/FileReverse.java" afterPath="$PROJECT_DIR$/FileReverse.java" />
-      <change beforePath="$PROJECT_DIR$/Search.java" afterPath="$PROJECT_DIR$/Search.java" />
-      <change beforePath="$PROJECT_DIR$/copy.txt" afterPath="$PROJECT_DIR$/copy.txt" />
-      <change beforePath="$PROJECT_DIR$/out.txt" afterPath="$PROJECT_DIR$/out.txt" />
       <change beforePath="$PROJECT_DIR$/out/production/swagman/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/swagman/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/swagman/MergeSortString.class" afterPath="$PROJECT_DIR$/out/production/swagman/MergeSortString.class" />
     </list>
@@ -46,7 +42,7 @@
       <file leaf-file-name="Search.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Search.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
+            <state relative-caret-position="-790">
               <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -773,7 +769,7 @@
       <workItem from="1516694992556" duration="2370000" />
       <workItem from="1516751334941" duration="1517000" />
       <workItem from="1516765239776" duration="1502000" />
-      <workItem from="1516768748995" duration="34000" />
+      <workItem from="1516768748995" duration="78000" />
     </task>
     <task id="LOCAL-00001" summary="e2">
       <created>1512271090883</created>
@@ -1041,11 +1037,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516751366490</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="lab2 start">
+      <created>1516768797959</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1516768797959</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103041000" />
+    <option name="totallyTimeSpent" value="103085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1435" height="877" extended-state="6" />
@@ -1442,6 +1445,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1463,7 +1467,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Search.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
+        <state relative-caret-position="-790">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
