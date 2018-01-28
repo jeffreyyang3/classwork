@@ -1,9 +1,21 @@
+//Jeffrey Yang
+//1606512
+//CMPS 12B
+//1/24/2018
+//Reads strings from a file, merge sorts those strings and uses a binary search
+//to find if the command line arguments match anything in the value
+//also returns line number in original file of found values
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Search {
     public static void main(String[] args) throws IOException {
+        if(args.length < 1){
+            System.out.println("Usage: Search file target1 [target2 ..]");
+            System.exit(1);
+        }
 
 
         String line;
@@ -18,6 +30,7 @@ public class Search {
             count++;
         }
         counter.close();
+    //creates an array of line numbers
         int[] lines = new int[count];
         for(int i = 0; i < lines.length; i++){
             lines[i] = i+1;
@@ -29,7 +42,7 @@ public class Search {
             token[i] = in.nextLine();
         }
         
-        MergeSortString(token, 0, token.length - 1, lines);
+        MergeSortString(token, lines, 0, token.length - 1);
 
         for(int i = 1; i < args.length; i++){
             int indx = binarySearch(token,0,token.length-1, args[i]);
@@ -56,16 +69,17 @@ public class Search {
 
 
     }
-    public static void MergeSortString(String[] A, int firstindex, int lastindex, int[] indexes){
+    public static void MergeSortString(String[] A, int[] indexes, int firstindex, int lastindex){ 
         int midpoint;
         if(firstindex < lastindex) {
             midpoint = (firstindex+lastindex)/2;
-            MergeSortString(A, firstindex, midpoint, indexes);
-            MergeSortString(A, midpoint+1, lastindex, indexes);
-            merge(A, firstindex, midpoint, lastindex, indexes);
+            MergeSortString(A, indexes, firstindex, midpoint);
+            MergeSortString(A, indexes, midpoint+1, lastindex);
+            merge(A, indexes, firstindex, midpoint, lastindex);
         }
     }
-    public static void merge(String[] A, int lowerindex, int midpoint, int upperindex, int[] lines){
+    public static void merge(String[] A, int[] lines, int lowerindex, int midpoint, int upperindex){
+    //uses merge sort and applies the same swaps to the lines array so lines numbers will be tracked along with the swaps
         int n1 = midpoint-lowerindex+1;
         int n2 = upperindex-midpoint;
         String[] L = new String[n1];
