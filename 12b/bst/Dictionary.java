@@ -1,8 +1,9 @@
-//-----------------------------------------------------------------------------
-// DictionaryInterface.java
-// interface for the Dictionary ADT
-//-----------------------------------------------------------------------------
-
+// Jeffrey Yang
+// CMPS 12B
+// 1606512
+// 3/16/2018
+// Dictionary.java
+// BST implementation of Dictionary Interface
 public class Dictionary implements DictionaryInterface{
     private class Node{
         String key;
@@ -40,7 +41,7 @@ public class Dictionary implements DictionaryInterface{
         return numPairs;
     }
 
-    public Node findKey(Node R, String k){
+    private Node findKey(Node R, String k){
         if(R == null || k.compareTo(R.key) == 0){
             return R;
         }
@@ -51,7 +52,7 @@ public class Dictionary implements DictionaryInterface{
             return findKey(R.right, k);
         }
     }
-    public Node findParent(Node N){
+    private Node findParent(Node N){
         Node P = null;
         if(N != root){
             P = root;
