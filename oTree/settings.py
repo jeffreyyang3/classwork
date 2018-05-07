@@ -19,6 +19,14 @@ SESSION_CONFIGS = [
         'app_sequence': ['public_goods', 'payment_info'],
     },
     {
+	    'name': 'my_public_goods',
+	    'display_name': "My Public Goods (Simple)",
+	    'num_demo_participants': 3,
+	    'app_sequence': ['my_public_goods'],
+    },
+
+    
+    {
         'name': 'guess_two_thirds',
         'display_name': "Guess 2/3 of the Average",
         'num_demo_participants': 3,
